@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --color1: white;
+  --color2: #3B9DFF;
+  --color3: #1F83E6;
+  --color4: #996000;
+  --color5: #E69B1E;
+  --font-text: 'Chivo Mono', monospace;
+  --font-title: 'Bebas Neue', cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+  text-decoration: none;
+  scroll-behavior: smooth
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title)
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  height: 70px;
+  width: 100vw;
+  background-color: var(--color5);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color1)
+}
+
+nav {
+  margin: 0 30px;
+}
+
+a, a:visited {
+  color: var(--color1)
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3rem;
+  background-color: var(--color2);
+}
+
+#welcome-section p, h1 {
+  text-align: center
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  min-height: 700px;
+  background-color: var(--color4);
+  font-size: 1.2rem
+}
+
+#portfolio {
+  display: flex;
+  justify-content: space-between
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: var(--color2);
+  margin: 10px;
+  text-align: center
+}
+
+#projects-title {
+  margin: 80px auto 40px auto;
+  font-size: 3rem;
+  text-align: center
+}
+
+.portfolio-title {
+  margin: 20px 10px;
+  font-size: 2rem;
+  text-align: center
+}
+
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color3);
+  font-size: 1.3rem;
+  font-weight: bold
+}
+
+#profile {
+  margin: 35px auto;
+  font-size: 1.3rem
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: var(--color5);
+  color: var(--color1);
+}
+
+@media (max-width: 840px) {
+  #portfolio {
+    display: flex;
+    flex-direction: column
+  }
+
+  #projects {
+    height: auto
+  }
+
+  .project-tile {
+    width: 80vw
+  }
+}
