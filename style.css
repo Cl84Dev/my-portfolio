@@ -127,6 +127,30 @@ a, a:visited {
   color: var(--color1);
 }
 
+.social-net-links i {
+  transition: 0.4s;
+}
+
+.social-net-links i:hover {
+  transform: translateY(6px);
+}
+
+.linkedin:hover {
+  color: #2867B2
+}
+
+.facebook:hover {
+  color: #1977F3
+}
+
+.github:hover {
+  color: #000000
+}
+
+.twitter:hover {
+  color: #00ACED
+}
+
 @media (max-width: 840px) {
   #portfolio {
     display: flex;
